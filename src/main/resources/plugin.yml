@@ -1,0 +1,8 @@
+name: TreeSpirit
+version: '1.0-SNAPSHOT'
+main: io.github.KarolisLipinskas.treeSpirit.TreeSpirit
+api-version: '1.21'
+commands:
+  border:
+    description: detection border command
+    usage: /border [true|false]
