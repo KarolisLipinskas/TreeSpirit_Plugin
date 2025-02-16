@@ -18,6 +18,7 @@ public final class TreeSpirit extends JavaPlugin {
         getServer().getPluginManager().registerEvents(challengeManager, this);
         getCommand("border").setExecutor(new BorderCommand(challengeManager));
 
+        new PlayerTracker(this, challengeManager);
     }
 
     public void initializeChallengeStart(Block startBlock) {
