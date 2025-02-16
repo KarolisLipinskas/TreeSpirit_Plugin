@@ -35,7 +35,7 @@ public class PlayerTracker {
                     }
                 }
             }
-        }.runTaskTimer(plugin, 20L, 20L);
+        }.runTaskTimer(plugin, 0L, 10L);
     }
 
     private boolean isInsideDetectionRadius(Player player) {
@@ -49,7 +49,7 @@ public class PlayerTracker {
 
         // Get the min and max coordinates (rounding to whole block values)
         int minX = (int) Math.floor(box.getMinX());
-        int minY = (int) Math.floor(box.getMinY());
+        int minY = (int) Math.floor(box.getMinY()) - 1;
         int minZ = (int) Math.floor(box.getMinZ());
 
         int maxX = (int) Math.floor(box.getMaxX());
